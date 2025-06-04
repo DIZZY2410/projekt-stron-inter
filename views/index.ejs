@@ -1,0 +1,9 @@
+<% posts.forEach(post => { %>
+  <article>
+    <h2><a href="/post/<%= post.id %>"><%= post.title %></a></h2>
+    <p class="date"><%= post.date %></p>
+    <div class="excerpt">
+      <%= post.content.substring(0, 100) %>...
+    </div>
+  </article>
+<% }) %>
